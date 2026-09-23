@@ -1,0 +1,163 @@
+{
+  "cookies": [
+    {
+      "name": "zsn_domain",
+      "value": ".zycus.com",
+      "domain": "dewdrops.zycus.com",
+      "path": "/zsp",
+      "expires": 1790193004,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "browser_preference_locale",
+      "value": "en_US",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": 1824744366.396505,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "browser_preference_register_locale",
+      "value": "en_US",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": 1824744366.396715,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SAAS_COMMON_BASE_TOKEN_ID",
+      "value": "18f39a70-7b0f-4d24-8682-f30a6caff004",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IS_SUPPLIER_USER",
+      "value": "true",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "profile_ver",
+      "value": "0",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "DOMAIN_URL",
+      "value": "https%3A%2F%2Fzsn.zycus.com",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "USER_ID",
+      "value": "6aee945b-6bd2-472d-9951-4c012696bff9",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "USER_EMAIL",
+      "value": "testnewwing1%40yopmail.com",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "DOMAIN",
+      "value": ".zycus.com",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "isMfaEnabled",
+      "value": "false",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": 1824744364.697187,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IS_ADMIN",
+      "value": "false",
+      "domain": ".zycus.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_dd_s",
+      "value": "rum=2&id=12bce739-706f-414d-bd69-1a8d14f5117d&created=1790184361950&expire=1790185264139",
+      "domain": "dewdrops.zycus.com",
+      "path": "/",
+      "expires": 1790185278,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://zycus.com",
+      "_crHasCrossSiteAncestor": false
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://dewdrops.zycus.com",
+      "localStorage": [
+        {
+          "name": "userpilot:sessions",
+          "value": "{\"35926985\":[]}"
+        },
+        {
+          "name": "role",
+          "value": "user"
+        },
+        {
+          "name": "untested_browser_warning",
+          "value": "1"
+        },
+        {
+          "name": "userpilotSDK838618541",
+          "value": "{}"
+        },
+        {
+          "name": "ZSN_Web",
+          "value": "https://zsn.zycus.com"
+        }
+      ]
+    }
+  ]
+}
