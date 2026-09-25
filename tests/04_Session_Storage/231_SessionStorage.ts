@@ -1,29 +1,64 @@
-import {chromium} from 'playwright';
-import dotenv from 'dotenv';
+//for ZSN
+// import {chromium} from 'playwright';
+// import dotenv from 'dotenv';
 
-dotenv.config()
+// dotenv.config()
 
-const userEmail :string | undefined = process.env.ZSN_USER;
-const userPassword = process.env.ZSN_PASS;
+// const userEmail :string | undefined = process.env.ZSN_USER;
+// const userPassword = process.env.ZSN_PASS;
+// async function saveSession() {
+//     let browser = await chromium.launch({headless : false});
+//     let context = await browser.newContext();
+//     let page = await context.newPage();
+
+//     await page.goto("https://dewdrops.zycus.com/zsp/guest")
+//     await page.locator('.au--login--emailAddress').fill(userEmail || '');
+//     await page.fill('.au--login--password',userPassword || "");
+//     await page.locator('.au--login--loginButton').click();
+//    // await page.waitForURL('#\/(dashboard)/',{timeout:15000});
+//   await page.waitForTimeout(15000);
+
+
+//     await context.storageState({path: './user-session.json'});
+
+//     console.log("Session saved to user-session.json ✅");
+
+//     await browser.close();
+
+// }
+
+// saveSession()
+
+
+
+import { chromium } from 'playwright';
+import dotenv from "dotenv";
+
+dotenv.config();
+// Credentials live in .env (gitignored) — never hardcode them in a public repo.
+
+const VWO_USER = process.env.VWO_USER;
+const VWO_PASS = process.env.VWO_PASSWORD;
+
 async function saveSession() {
-    let browser = await chromium.launch({headless : false});
+  
+    let browser = await chromium.launch({ headless: false });
     let context = await browser.newContext();
     let page = await context.newPage();
 
-    await page.goto("https://dewdrops.zycus.com/zsp/guest")
-    await page.locator('.au--login--emailAddress').fill(userEmail || '');
-    await page.fill('.au--login--password',userPassword || "");
-    await page.locator('.au--login--loginButton').click();
-   // await page.waitForURL('#\/(dashboard)/',{timeout:15000});
-  await page.waitForTimeout(15000);
+    await page.goto("https://app.wingify.com/#/login");
 
+    await page.fill("#login-username", VWO_USER||"");
+    await page.fill("#login-password", VWO_PASS||"");
 
-    await context.storageState({path: './user-session.json'});
+    await page.click("#js-login-btn");
+    await page.waitForURL(/#\/(dashboard|home)/, { timeout: 15000 });
 
+    await context.storageState({ path: "./user-session.json" });
     console.log("Session saved to user-session.json ✅");
 
     await browser.close();
 
 }
+saveSession();
 
-saveSession()
