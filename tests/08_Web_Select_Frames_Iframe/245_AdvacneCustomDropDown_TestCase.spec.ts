@@ -20,5 +20,7 @@ test("Verify Advance Custom DropDowns", async({page})=>{
     await page.getByText("api-testing", {exact:true}).click();
     await page.getByText("accessibility", {exact : true}).click();
     await page.getByText("visual-regression", {exact:true}).click();
+
+    
        await page.pause()
     })
