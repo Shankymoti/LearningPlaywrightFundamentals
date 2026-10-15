@@ -20,8 +20,8 @@ test.describe("Shadow handling", ()=>{
 
 
        page.getByTestId('nested-host');
-      await page.getByTestId('card-inside-email').fill('pramod@thetestingacdemy.com');
-      await page.getByTestId('card-inside-password').fill('pramod@123');
+      await page.getByTestId('card-inside-email').fill('shashank@thetestingacdemy.com');
+      await page.getByTestId('card-inside-password').fill('shashank@123');
       await page.getByTestId('card-inside-submit').click();
 
       await page.pause();
